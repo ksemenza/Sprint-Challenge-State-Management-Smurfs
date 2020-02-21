@@ -92,7 +92,7 @@ const Smurf = props => {
             />
             <br />
 
-            <button type='submit'>Submit Smurf Changes</button>
+            <button type='submit'>Submit Change</button>
 
         </form>}
         </div>

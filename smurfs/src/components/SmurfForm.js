@@ -20,7 +20,7 @@ const SmurfForm = props => {
 
     return (
         <div>
-        <h2>Add a Smurf</h2>
+        <h2>Add a New Smurf</h2>
         <form onSubmit={submitForm}>
             <label htmlFor='name'>Name: </label>
             <input
@@ -52,7 +52,7 @@ const SmurfForm = props => {
             />
             <br />
 
-            <button type='submit'>Submit Smurf</button>
+            <button type='submit'>Submit</button>
 
         </form>
         {props.isPosting && <p>Submitting smurf...</p>}

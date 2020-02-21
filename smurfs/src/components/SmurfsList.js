@@ -6,7 +6,7 @@ import Smurf from './Smurf';
 const SmurfsList = props => {
     return (
         <div>
-            {!props.smurfs && <button onClick={props.getSmurfs}>Get Smurfs</button>}
+            {!props.smurfs && <button onClick={props.getSmurfs}>Show Smurfs</button>}
             
             {!props.smurfs && <h3>Go ahead, click for Smurfs!</h3>}
             <div className='smurfs-box'>
