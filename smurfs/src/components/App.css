@@ -22,6 +22,24 @@
   font-size: large;
 }
 
+.mainTitle {
+  background-color: #40bce7;
+  padding: 1.5rem;
+  margin-top: -0.01rem;
+  border: 1px outset white;
+  color: white;
+}
+
+.formTitle{
+  background-color: #40bce7;
+  width: 55.4%;
+  margin: 0 auto;
+  border: 2px groove whitesmoke;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

@@ -20,7 +20,7 @@ const SmurfForm = props => {
 
     return (
         <div>
-        <h2>Add a New Smurf</h2>
+        <h2 className='formTitle'>New Smurf</h2>
         <form onSubmit={submitForm}>
             <label htmlFor='name'>Name: </label>
             <input

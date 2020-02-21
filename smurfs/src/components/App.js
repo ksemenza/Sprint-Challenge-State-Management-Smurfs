@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>SMURFS!</h1>
+        <h1 className='mainTitle'>Smurf Name Inventory</h1>
         <SmurfsList />
         <SmurfForm />
 

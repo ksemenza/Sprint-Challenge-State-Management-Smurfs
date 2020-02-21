@@ -8,7 +8,7 @@ const SmurfsList = props => {
         <div>
             {!props.smurfs && <button onClick={props.getSmurfs}>Show Smurfs</button>}
             
-            {!props.smurfs && <h3>Go ahead, click for Smurfs!</h3>}
+            {!props.smurfs && <h3>Click for Names</h3>}
             <div className='smurfs-box'>
                 {props.error && <p>{props.error}</p>}
                 {props.isFetching && <p>Loading Smurfs...</p>}
