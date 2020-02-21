@@ -17,7 +17,7 @@ import tree from '../images/tree.svg';
 const pickIcon = () => {
     const icons = [bee, blossom, butterfly, clover, daffodil, leaves, mushroom, rainbow, sun, sunflower, tree];
     const randomNum = Math.floor(Math.random() * icons.length);
-    return icons[Math.floor(Math.random() * icons.length)];
+    return icons[randomNum];
 }
 
 const Smurf = props => {
@@ -52,10 +52,12 @@ const Smurf = props => {
         <div className='smurf-box'>
             <button onClick={handleClick}>X</button>
             <button onClick={startEdit}>{editing? 'Cancel Edit': 'Edit'}</button>
-            <h3>{props.smurf.name}</h3>
-            <div className='imgContainer'>
-                <img src={pickIcon()} alt='icon' />
+            <div className='imgNameCta'>
+                <img className='icon' src={pickIcon()} alt='icon' />
+                <h3>{props.smurf.name}</h3>
             </div>
+        
+        
             <p>{props.smurf.age} Years Old</p>
             <p>{props.smurf.height} cm</p>
 

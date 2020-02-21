@@ -57,17 +57,21 @@ form {
   border: 3px groove white;
 }
 
-.imgContainer {
+.imgNameCta {
   width: 4rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+
 }
 
-.imgContainer img {
-  width: 100%;
+.imgNameCta img {
+  width:50%;
+}
+.icon {
+  margin-right: 1.0rem;
 }
 
 input {
