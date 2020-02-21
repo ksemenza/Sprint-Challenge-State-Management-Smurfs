@@ -1,8 +1,12 @@
 1. What problem does the context API help solve?
+
+
 It provides an alternative to prop-drilling, where state that is needed by child components has to be passed down as props to each child component along the path to the child component that needs the state data. So some components receive props that they don’t even use! (except to pass along). With context API, the components that are nested inside the Provider have access to state data if they need it, without worrying about a direct line of passing props.
 
 
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+
 Actions: They are objects with one required parameter of type, and an optional parameter called payload. The type describes the interaction/event that took place, and the payload is the data that the reducer will need. Actions are sent to the reducer. Actions are made by action creators.
 
 Reducers: They are pure functions that take in actions and return new state. The action type determines which code inside the reducer is run, to update a copy of the state and then return that new, updated copy. Given the same input, a reducer will return the same output each time.
