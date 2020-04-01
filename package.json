@@ -4,7 +4,9 @@
   "description": "Redux Sprint Challenge",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "node start-client.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "concurrently": "^5.1.0",
     "nodemon": "^1.19.1"
   }
 }
